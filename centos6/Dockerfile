@@ -25,8 +25,8 @@ RUN echo "===> Installing EPEL..."        && \
     yum -y update && \
     \
     \
-    echo "===> Installing latest pip..." && \
-    yum -y install sudo python-pip python-pycrypto python-devel gcc && \
+    echo "===> Installing dependencies..." && \
+    yum -y install sudo python-pip python-pycrypto python-devel gcc git && \
     pip install -U pip                   && \
     \
     \

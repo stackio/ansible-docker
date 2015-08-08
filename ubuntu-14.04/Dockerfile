@@ -24,6 +24,7 @@ RUN echo "===> Adding Ansible's PPA..."  && \
     \
     echo "===> Installing Ansible..."  && \
     apt-get install -y ansible=${ANSIBLE_VERSION}*  && \
+    apt-get install -y git && \
     \
     \
     echo "===> Removing Ansible PPA..."  && \
