@@ -1,4 +1,4 @@
-# Dockerfile for building Ansible image for CentOS 7, with as few additional software as possible.
+# Dockerfile for building Ansible image for CentOS 6, with as few additional software as possible.
 #
 # [NOTE] To fix the "sudo: sorry, you must have a tty to run sudo" issue,
 #        we need to patch /etc/sudoers.
