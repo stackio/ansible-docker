@@ -36,6 +36,7 @@ RUN echo "===> Installing EPEL..."        && \
     \
     echo "===> Disabling sudo 'requiretty' setting..."    && \
     sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers   && \
+    echo 'Defaults        env_keep += "http_proxy https_proxy HTTP_PROXY HTTPS_PROXY"' >> /etc/sudoers && \
     \
     \
     echo "===> Removing YUM build resources..."   && \
