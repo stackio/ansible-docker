@@ -22,7 +22,7 @@ RUN echo "===> Installing epel..."        && \
     echo 'Defaults        env_keep += "http_proxy https_proxy HTTP_PROXY HTTPS_PROXY"' >> /etc/sudoers && \
 
     echo "===> Removing YUM build resources..."   && \
-    yum -y remove epel-release gcc python-devel python-pycrypto python-pip && \
+    yum -y remove epel-release gcc python-devel && \
     yum clean all
 
 CMD ["/run.sh"]
