@@ -6,7 +6,7 @@ FROM stackio/centos7-systemd
 MAINTAINER Alexandre Mclean <alexandre.mclean@gmail.com>
 
 RUN echo "===> Installing SSH..."        && \
-    yum -y install openssh-server epel-release sudo && \
+    yum -y install openssh-server epel-release && \
     yum -y install pwgen && \
 
     echo "===> Configuring ssh..."    && \
