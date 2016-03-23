@@ -5,7 +5,7 @@ FROM stackio/centos7-sshd
 
 MAINTAINER Alexandre Mclean <alexandre.mclean@gmail.com>
 
-ENV ANSIBLE_VERSION 1.9.4
+ENV ANSIBLE_VERSION 1.9.5
 
 RUN echo "===> Installing epel..."        && \
     yum -y install epel-release  && \
